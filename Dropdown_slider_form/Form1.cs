@@ -109,5 +109,23 @@ namespace Dropdown_slider_form
             container_panel4.Tag = argumentform;
             argumentform.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            side_bar_panel2.Visible = false;
+        }
+
+        private void menu_button_Click(object sender, EventArgs e)
+        {
+            if (side_bar_panel2.Visible == false)
+                side_bar_panel2.Visible = true;
+            else
+                side_bar_panel2.Visible = false;
+        }
     }
 }
